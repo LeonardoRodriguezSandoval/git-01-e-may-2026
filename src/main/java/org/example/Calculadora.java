@@ -25,4 +25,12 @@ public class Calculadora {
     public double multiplicar () {
         return numero1 * numero2;
     }
+
+    public double dividision() {
+        if (numero2 != 0) {
+            return numero1 / numero2;
+        } else  {
+            throw  new ArithmeticException("No se puede dividir entre cero");
+        }
+    }
 }
